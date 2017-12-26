@@ -1,7 +1,7 @@
 # HTTP-Server
 Basic HTTP Server with a feature to invoke an OS shell in the dir the files are being served from.
 
-I was in need of a quick HTTP-Server for a project I am working on at the time of this post. Of course with Python you could use the one-liner `python -m SimpleHTTPServer`. However for convenience sake I have added the option to invoke an OS shell in the directory your files are being served from. This is done so that you can easily move or copy the files you'd like to serve into the relevant directory. I have also added the option to define a host and port of your choosing but a default setting of `127.0.0.1:8000` is included as well.
+I was in need of a quick HTTP-Server for a project I am working on at the time of this post. Of course with Python you could use the one-liner `python -m SimpleHTTPServer`. However I figured my server could use some more features, for convenience sake I have added the option to invoke an OS shell in the directory your files are being served from. This is done so that you can easily move or copy the files you'd like to serve into the relevant directory. I have also added the option to define a host and port of your choosing but a default setting of `127.0.0.1:8000` is included as well.
 
 ## Usage
 
