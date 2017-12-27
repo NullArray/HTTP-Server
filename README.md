@@ -5,7 +5,7 @@ I was in need of a quick HTTP-Server for a project I am working on at the time o
 
 ## Usage
 
-Place the `server.py` file into the directory you wish to serve files from. Start it from the command line and simply answer the prompts. When the server is configured it will start serving the files in said directory.
+Clone the repo with `git clone https://github.com/NullArray/HTTP-Server.git` After which you can place the `server.py` file into the directory you wish to serve files from. Start it from the command line and simply answer the prompts. When the server is configured it will start serving the files in said directory.
 
 ### Dependencies
 
