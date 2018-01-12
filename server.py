@@ -71,4 +71,8 @@ except Exception as e:
 
 print "[" + t.green("+") + "]Serving at", IP, repr(PORT)
 
-httpd.serve_forever()
+# Catching keyboard interrupt for aesthetics purposes
+try:
+	httpd.serve_forever()
+except KeyboardInterrupt:
+	print "\n[" + t.red("!") + "]User Aborted."
