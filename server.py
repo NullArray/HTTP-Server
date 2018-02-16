@@ -10,12 +10,11 @@ from blessings import Terminal
 t = Terminal()
 
 def quickshell():
-	cwd = cwd = os.getcwd()
+	cwd = os.getcwd()
 	print "[" + t.green("+") + "]OS Shell in " + cwd 
 	print "[" + t.green("+") + "]Enter 'Q' to quit"
 	
 	try:
-		
 		while True:
 			command = raw_input("\n<" + t.cyan("SERVER") + ">$ ")
 			if not command in ('q', 'Q'):
