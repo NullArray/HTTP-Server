@@ -10,7 +10,7 @@ from blessings import Terminal
 t = Terminal()
 
 def quickshell():
-	cwd = os.system('pwd')
+	cwd = cwd = os.getcwd()
 	print "[" + t.green("+") + "]OS Shell in " + cwd 
 	print "[" + t.green("+") + "]Enter 'Q' to quit"
 	
@@ -30,24 +30,24 @@ def quickshell():
 
 print "\n[" + t.green("+") + "]Basic HTTP Server.\n"
 
-default = raw_input("[" + t.magenta("?") + "]Default Config? [Y]es/[N]o: ")
-if default == 'y' or 'Y':
+default = raw_input("[" + t.magenta("?") + "]Default Config? [Y]es/[N]o: ").lower()
+if default == 'y':
 	
 	PORT = 8000
 	IP = "127.0.0.1"
 	print "\n[" + t.green("+") + "]Default settings loaded.\n"
 	
-elif default == 'n' or 'N':
+elif default == 'n':
 	
 	print "[" + t.green("+") + "]Specify custom values.\n"
-	PORT = raw_input(int("[" + t.magenta("?") + "]Enter port: ")) 
-	IP = raw_input("[" + t.magenta("?") + "]Enter host: ")
+	PORT = input("Enter port: ")
+	IP = raw_input("Enter host: ")
 	
 	print "[" + t.green("+") + "]Invoke a shell to make adjustments in server directory?"
-	invoke = raw_input("[" + t.magenta("?") + "][Y]es/[N]o: ")
-	if invoke == 'y' or 'Y':
+	invoke = raw_input("[" + t.magenta("?") + "][Y]es/[N]o: ").lower()
+	if invoke == 'y':
 		quickshell()
-	elif invoke == 'n' or 'N':
+	elif invoke == 'n':
 		print "[" + t.green("+") + "]Done."
 	else:
 		print "\n[" + t.red("!") + "]Unhandled Option."
