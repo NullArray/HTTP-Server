@@ -1,4 +1,4 @@
-#!/usr/bin/python 2.7
+#!/usr/bin/env python 2.7
 
 import SimpleHTTPServer
 import SocketServer
