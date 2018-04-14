@@ -13,7 +13,7 @@ After which you can place the `server.py` file into the directory you wish to se
 
 Personally i just put the execution of the script on an alias like so.
 
-`alias serve='cd /home/uname/server && python server.py'`
+`alias serve='cd /home/$USER/server && python server.py'`
 
 Easier than a one-liner and with extra features to boot in my humble opinion.
 
